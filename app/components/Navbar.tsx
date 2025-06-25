@@ -1,6 +1,6 @@
 import { Link, NavLink } from "@remix-run/react";
 import React from "react";
-
+import Logo from "./logo";
 type Props = {};
 const navigation = [
   { name: "Home", href: "/home" },
@@ -22,7 +22,7 @@ function Navbar({}: Props) {
         <div className="flex">
           {/* <div className="flex w-40 shrink-0 items-center lg:w-56"> */}
           <Link prefetch="intent" to="/" className="px-12">
-            <div>divine</div>
+          <Logo /> 
           </Link>
           {/* </div> */}
           <nav
